@@ -1,7 +1,7 @@
 # Gerimedica Task
 
 ## 3rd Party Packages
-- **@nebular/theme:** is an Angular UI components library which provides many components like button, input, card and so on.
+- **@nebular/theme:** is an Angular UI components library which provides many components like button, input, checkbox, card and so on.
 
 ## Commands
 - **Development server:** Run `ng serve --open` for a dev server.
