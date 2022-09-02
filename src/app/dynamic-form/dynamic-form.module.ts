@@ -3,7 +3,7 @@ import { NbButtonModule, NbCardModule } from '@nebular/theme';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-import { FieldEditorTemplateDirective } from '../field-editor-template.directive';
+import { FieldEditorTemplateDirective } from './field-editor-template.directive';
 import { DynamicFormComponent } from './dynamic-form.component';
 
 @NgModule({
