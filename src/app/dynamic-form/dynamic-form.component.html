@@ -1,0 +1,21 @@
+<nb-card>
+    <nb-card-header>
+        <span>Visibility:</span>
+        <button [status]="metadata.visibilityToggleButtonStatus" nbButton (click)="toggleVisibility(metadata.field)"
+            *ngFor="let metadata of augmentedFieldMetadataList">{{ metadata.label }}
+        </button>
+    </nb-card-header>
+    <nb-card-body>
+        <form [formGroup]="formGroup" (ngSubmit)="submit()">
+            <ng-container *ngFor="let metadata of augmentedFieldMetadataList">
+                <ng-container *ngIf="!metadata.hidden">
+                    <label><sup *ngIf="metadata.mandatory">*</sup><span>{{ metadata.label }}</span></label>
+                    <ng-container
+                        *ngTemplateOutlet="fieldEditorTemplatesByType[metadata.type]; context: { $implicit: metadata.formControl }">
+                    </ng-container>
+                </ng-container>
+            </ng-container>
+            <button nbButton status="success" type="submit" [disabled]="formGroup.invalid">submit</button>
+        </form>
+    </nb-card-body>
+</nb-card>

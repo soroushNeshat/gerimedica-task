@@ -1,0 +1,12 @@
+<nb-layout windowMode [restoreScrollTop]="false">
+  <nb-layout-column>
+    <app-dynamic-form [fieldMetadataList]="fieldMetadataList">
+      <ng-template appFieldEditorTemplate="check" let-formControl>
+        <nb-checkbox [formControl]="formControl"></nb-checkbox>
+      </ng-template>
+      <ng-template appFieldEditorTemplate="text" let-formControl>
+        <input nbInput [formControl]="formControl">
+      </ng-template>
+    </app-dynamic-form>
+  </nb-layout-column>
+</nb-layout>
