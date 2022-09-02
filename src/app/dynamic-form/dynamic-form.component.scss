@@ -1,0 +1,17 @@
+form {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    
+    > label > sup {
+        color: red;
+    }
+}
+
+nb-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
