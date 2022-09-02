@@ -1,7 +1,7 @@
 import { Component, ContentChildren, Input, QueryList, TemplateRef } from '@angular/core';
 import { FormBuilder, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 import { NbComponentStatus } from '@nebular/theme';
-import { FieldEditorTemplateDirective } from '../field-editor-template.directive';
+import { FieldEditorTemplateDirective } from './field-editor-template.directive';
 import { FieldMetadata } from '../models/field.metadata';
 import { AugmentedFieldMetadata } from './augmented-field.meta-data';
 
